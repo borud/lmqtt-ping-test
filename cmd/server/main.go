@@ -12,7 +12,7 @@ import (
 	_ "github.com/lab5e/lmqtt/pkg/topicalias/fifo" // required for side-effects
 )
 
-var listenAddr = flag.String("addr", ":1883", "listen address for MQTT broker")
+var listenAddr = flag.String("a", ":1883", "listen address for MQTT broker")
 
 func main() {
 	flag.Parse()
