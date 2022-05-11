@@ -28,6 +28,8 @@ var (
 )
 
 func main() {
+	flag.Parse()
+
 	if *clientID == "" {
 		var err error
 		*clientID, err = hwid.ID()
